@@ -1,0 +1,246 @@
+
+/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
+@import url(https://fonts.googleapis.com/css?family=Monterrat:400,700);
+
+body{
+	color: #555;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#header{
+	/*background-color: #2778B3;*/
+	background-image: url(../img/header.jpg);
+	background-size: cover;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#content{
+	height: 715px;
+	width: 1000px;
+	/*display: inline-block;*/
+}
+
+#header-title{
+	display: block;
+	font-family: Kaiti, serif;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+
+.container{
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+
+#header a{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+
+#header a:hover{
+	color: #222;
+}
+
+#footer{
+	background-color: #2f2f2f;
+	padding: 50px 0;
+	clear: both;
+}
+
+.column{
+	min-width: 300px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#footer h4{
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+#footer p{
+	color: white;
+}
+
+a{
+	color:#1abc9c;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #f6a623;
+	cursor: pointer;
+}
+
+h1,h2,h3,h4{
+	color: #333;
+}
+
+
+p{
+	line-height: 1.5;
+}
+
+.about{
+	max-width: 800px;
+	margin: 0 atuo;
+	padding: 60px 0;
+	text-align: center;
+}
+
+#left-sidebar{ 
+	padding:15px 0px 0px;
+	display: block;
+	float: left;
+	font-family: 'Tangerine', serif;
+	font-size: 15px;
+	font-weight: bold;
+	width: 290px;
+}
+
+#left-sidebar dt{ 
+	padding:3px 0px 3px 25px; 
+	background:url(../images/dot2.jpg) no-repeat 15px 10px;
+}
+
+
+#left-sidebar dd{ 
+	margin-left:30px; 
+}
+
+#left-sidebar dd h4{ 
+	font-size:100%; 
+	font-weight:normal; 
+	padding:2px 0px 2px 15px;  
+	background:url(../small/job_ico.gif) no-repeat left 10px; 
+}
+
+#right-list {
+	display: block;
+	float: left;
+	padding:15px 0px 0px 50px;
+	max-width: 600px;
+	text-align: justify;
+}
+
+
+h2.Ti{ 
+	height:22px; 
+	line-height:14px; 
+	background:url(../images/Ltitle.jpg) no-repeat left top; 
+	overflow:hidden; 
+	font-size:100%;
+}
+
+h2.Ti b{ 
+	color:#404549; 
+	padding-left:15px; 
+	padding-right:10px;
+}
+
+h2.Ti span{ 
+	font-weight:normal; 
+	font-size:12px; 
+	color:#a0aeb9;
+}
+
+h2#PlistTi{
+	background:url(../images/Ltitle2.jpg) no-repeat left top;
+	float: left; 
+	width:350px;
+}
+
+h2#listTi{
+	background:url(../images/Ltitle2.jpg) no-repeat left top;
+	float: left; 
+	width:600;
+}
+
+#table-head{
+	width: 800px;
+	margin-left: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#user-manual{
+	margin-left: 20px;
+	font-size: 20px;
+	color: #000000;
+	text-align: left;
+}
+
+#standard-frame{
+}
+
+.float-clear{
+	clear: both;
+}
+
+a.with-list{
+	color: black;
+}
+
+a.with-list:hover{
+	color: gainsboro;
+}
+
+a.final-item{
+	color: #2E62A0;
+}
+
+a.final-item:hover{
+	color: #2E62A0;
+}
+
+a.user-manual-click{
+	font-family: Kaiti, serif;
+	font-size: 20px;
+	color: black;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+.triangle-top,
+.triangle-right,
+.triangle-bottom,
+.triangle-left {
+	margin: 0px auto;
+	width: 0;
+	height: 0;
+	border: 7px solid transparent;
+	float: left;
+}
+
+.triangle-top {
+	border-top-color: darkgray;
+	margin-top: 3px;
+	margin-right: 2px;
+}
+
+.triangle-right {
+	border-right-color: lightblue;
+}
+
+.triangle-bottom {
+	border-bottom-color: lightgreen;
+}
+
+.triangle-left {
+	border-left-color: dimgray;
+}
+
+#footer a:hover{
+	text-decoration: underline;
+}

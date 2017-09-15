@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>厦门市物流标准专题数据库</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=1100, initial-scale=1 user-scale=no" />
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script script type="text/javascript" src="jsp/action.js"></script>
+</head>
+<body>
+<div id="header">
+  <div class="container"> <a id="header-title" href="index.html">厦门市物流标准专题数据库</a> </div>
+</div>
+<div id="content">
+  <div class="container">
+    <div class="left-head">
+      <h2 class="Ti" id="PlistTi"> <b>物流标准分类</b> <span>/GATEGORIES</span> </h2>
+    </div>
+    <div class="right-head" id="right-title" style="visibility:hidden;">
+      <h2 class="Ti" id="listTi"> <b>标准清单</b> <span>/LIST</span> </h2>
+    </div>
+    <div class="float-clear"></div>
+    <div id="left-sidebar">
+      <dl id="a1">
+        <dt>
+        	<a class="user-manual-click" onClick="displayUserManual()">使用须知</a>
+        </dt>
+        <dt id="b1">
+          <div id="tl100" class="triangle-left"></div>
+          <div id="tp100" class="triangle-top" style="display: none;"></div>
+          <a class="with-list" onClick="displayOnClick('c1','tl100','tp100')">物流通用标准子体系</a>
+          <dl id="c1" style="display: none;">
+            <dt id="d1">
+              <div id="tl110" class="triangle-left"></div>
+              <div id="tp110" class="triangle-top" style="display: none;"></div>
+              <a class="with-list" onClick="displayOnClick('e1','tl110','tp110')">基础标准</a>
+              <dl id="e1" style="display: none;">
+                <dt id="s111"> <a class="final-item"  onClick="changeStandardList('data/s111.htm')">术语标准</a> </dt>
+                <dt id="s112"> <a class="final-item" onClick="changeStandardList('data/s112.htm')">图形符号与标志</a> </dt>
+                <dt id="s113"> <a class="final-item" onClick="changeStandardList('data/s113.htm')">导则</a> </dt>
+              </dl>
+            </dt>
+            <dt id="d2">
+              <div id="tl120" class="triangle-left"></div>
+              <div id="tp120" class="triangle-top" style="display: none;"></div>
+              <a class="with-list" onClick="displayOnClick('e2','tl120','tp120')">保障支撑标准</a>
+              <dl id="e2" style="display: none;">
+                <dt>
+                  <div id="tl121" class="triangle-left"></div>
+                  <div id="tp121" class="triangle-top" style="display: none;"></div>
+                  <a class="with-list" onClick="displayOnClick('s121','tl121','tp121')">设施标准</a>
+                  <dl id="s121" style="display: none;">
+                    <dt id="s1211"> <a class="final-item" onClick="changeStandardList('data/s1211.htm')">物流园区</a> </dt>
+                    <dt id="s1212"> <a class="final-item" onClick="changeStandardList('data/s1212.htm')">物流中心</a> </dt>
+                    <dt id="s1213"> <a class="final-item" onClick="changeStandardList('data/s1213.htm')">仓库</a> </dt>
+                    <dt id="s1214"> <a  class="final-item" onClick="changeStandardList('data/s1214.htm')">货运场站</a> </dt>
+                  </dl>
+                </dt>
+                <dt>
+                  <div id="tl122" class="triangle-left"></div>
+                  <div id="tp122" class="triangle-top" style="display: none;"></div>
+                  <a class="with-list" onClick="displayOnClick('s122','tl122','tp122')">设备标准</a>
+                  <dl id="s122" style="display: none;">
+                    <dt id="s1221"> <a class="final-item" onClick="changeStandardList('data/s1221.htm')">货架</a> </dt>
+                    <dt id="s1222"> <a class="final-item" onClick="changeStandardList('data/s1222.htm')">托盘</a> </dt>
+                    <dt id="s1223"> <a class="final-item" onClick="changeStandardList('data/s1223.htm')">叉车</a> </dt>
+                    <dt id="s1224"> <a class="final-item" onClick="changeStandardList('data/s1224.htm')">集装箱袋</a> </dt>
+                    <dt id="s1225"> <a class="final-item" onClick="changeStandardList('data/s1225.htm')">装卸搬运设备</a> </dt>
+                    <dt id="s1226"> <a class="final-item" onClick="changeStandardList('data/s1226.htm')">包装</a> </dt>
+                  </dl>
+                </dt>
+                <dt>
+                  <div id="tl123" class="triangle-left"></div>
+                  <div id="tp123" class="triangle-top" style="display: none;"></div>
+                  <a class="with-list" onClick="displayOnClick('s123','tl123','tp123')">信息标准</a>
+                  <dl id="s123" style="display: none;">
+                    <dt id="s1231"> <a class="final-item" onClick="changeStandardList('data/s1231.htm')">单证</a> </dt>
+                    <dt id="s1232"> <a class="final-item" onClick="changeStandardList('data/s1232.htm')">编码</a> </dt>
+                    <dt id="s1233"> <a class="final-item" onClick="changeStandardList('data/s1233.htm')">信息系统</a> </dt>
+                    <dt id="s1234"> <a class="final-item" onClick="changeStandardList('data/s1234.htm')">报文</a> </dt>
+                  </dl>
+                </dt>
+              </dl>
+            </dt>
+            <dt id="d3">
+              <div id="tl130" class="triangle-left"></div>
+              <div id="tp130" class="triangle-top" style="display: none;"></div>
+              <a class="with-list" onClick="displayOnClick('e3','tl130','tp130')">运营服务标准</a>
+              <dl id="e3" style="display: none;">
+                <dt>
+                  <div id="tl131" class="triangle-left"></div>
+                  <div id="tp131" class="triangle-top" style="display: none;"></div>
+                  <a class="with-list" onClick="displayOnClick('s131','tl131','tp131')">作业</a>
+                  <dl id="s131" style="display: none;">
+                    <dt id="s1311"> <a class="final-item" onClick="changeStandardList('data/s1311.htm')">仓储</a> </dt>
+                    <dt id="s1312"> <a class="final-item" onClick="changeStandardList('data/s1312.htm')">装卸搬运</a> </dt>
+                    <dt id="s1313"> <a class="final-item" onClick="changeStandardList('data/s1313.htm')">运输</a> </dt>
+                    <dt id="s1314"> <a class="final-item" onClick="changeStandardList('data/s1314.htm')">流通加工及包装</a> </dt>
+                  </dl>
+                </dt>
+                <dt>
+                  <div id="tl132" class="triangle-left"></div>
+                  <div id="tp132" class="triangle-top" style="display: none;"></div>
+                  <a class="with-list" onClick="displayOnClick('s132','tl131','tp131')">管理</a>
+                  <dl id="s132" style="display: none;">
+                    <dt id="s1321"> <a class="final-item" onClick="changeStandardList('data/s1321.htm')">综合</a> </dt>
+                    <dt id="s1322"> <a class="final-item" onClick="changeStandardList('data/s1322.htm')">统计评价</a> </dt>
+                    <dt id="s1323"> <a class="final-item" onClick="changeStandardList('data/s1323.htm')">安全与应急标准</a> </dt>
+                  </dl>
+                </dt>
+                <dt>
+                  <div id="tl133" class="triangle-left"></div>
+                  <div id="tp133" class="triangle-top" style="display: none;"></div>
+                  <a class="with-list" onClick="displayOnClick('s133','tl133','tp133')">服务</a>
+                  <dl id="s133" style="display: none;">
+                    <dt id="s1331"> <a class="final-item" onClick="changeStandardList('data/s1331.htm')">服务人员</a> </dt>
+                    <dt id="s1332"> <a class="final-item" onClick="changeStandardList('data/s1332.htm')">服务质量</a> </dt>
+                  </dl>
+                </dt>
+              </dl>
+            </dt>
+          </dl>
+        </dt>
+        <dt id="b2">
+          <div id="tl200" class="triangle-left"></div>
+          <div id="tp200" class="triangle-top" style="display: none;"></div>
+          <a  class="with-list" onClick="displayOnClick('c2','tl200','tp200')">专业物流标准子体系</a>
+          <dl id="c2" style="display: none;">
+            <dt id="d4">
+              <div id="tl210" class="triangle-left"></div>
+              <div id="tp210" class="triangle-top" style="display: none;"></div>
+              <a class="with-list" onClick="displayOnClick('e4','tl210','tp210')">农副产品、食品物流标准</a>
+              <dl id="e4" style="display: none;">
+                <dt>
+                  <div id="tl211" class="triangle-left"></div>
+                  <div id="tp211" class="triangle-top" style="display: none;"></div>
+                  <a class="with-list" onClick="dispalyLeftList('s211','tl211','tp211')">农副产品、食品冷链物流标准</a>
+                  <dl id="s211" style="display: none;">
+                    <dt id="s2111"> <a class="final-item" onClick="changeStandardList('data/s2111.htm')">规格与分类</a> </dt>
+                    <dt id="s2112"> <a class="final-item" onClick="changeStandardList('data/s2112.htm')">产品</a> </dt>
+                    <dt id="s2113"> <a class="final-item" onClick="changeStandardList('data/s2113.htm')">设施设备</a> </dt>
+                    <dt id="s2114"> <a class="final-item" onClick="changeStandardList('data/s2114.htm')">技术、操作、管理</a> </dt>
+                    <dt id="s2115"> <a class="final-item" onClick="changeStandardList('data/s2115.htm')">信息</a> </dt>
+                    <dt id="s2116"> <a class="final-item" onClick="changeStandardList('data/s2116.htm')">服务质量与评价</a> </dt>
+                  </dl>
+                </dt>
+                <dt>
+                  <div id="tl212" class="triangle-left"></div>
+                  <div id="tp212" class="triangle-top" style="display: none;"></div>
+                  <a class="with-list" onClick="dispalyLeftList('s212','tl212','tp212')">其他农副产品、食品物流标准</a>
+                  <dl id="s212" style="display: none;">
+                    <dt id="s2121"> <a class="final-item" onClick="changeStandardList('data/s2121.htm')">产品</a> </dt>
+                    <dt id="s2122"> <a class="final-item" onClick="changeStandardList('data/s2122.htm')">设施设备</a> </dt>
+                    <dt id="s2123"> <a class="final-item" onClick="changeStandardList('data/s2123.htm')">技术、操作、管理</a> </dt>
+                    <dt id="s2124"> <a class="final-item" onClick="changeStandardList('data/s2124.htm')">信息</a> </dt>
+                  </dl>
+                </dt>
+              </dl>
+            </dt>
+            <dt id="d5">
+              <div id="tl220" class="triangle-left"></div>
+              <div id="tp220" class="triangle-top" style="display: none;"></div>
+              <a class="with-list" onClick="displayOnClick('e5','tl220','tp220')">粮油物流标准</a>
+              <dl id="e5" style="display: none;">
+                <dt id="s221"> <a class="final-item" onClick="changeStandardList('data/s221.htm')">设施设备</a> </dt>
+                <dt id="s222"> <a class="final-item" onClick="changeStandardList('data/s222.htm')">技术、操作、管理</a> </dt>
+                <dt id="s223"> <a class="final-item" onClick="changeStandardList('data/s223.htm')">信息</a> </dt>
+              </dl>
+            </dt>
+            <dt id="d6">
+              <div id="tl230" class="triangle-left"></div>
+              <div id="tp230" class="triangle-top" style="display: none;"></div>
+              <a class="with-list" onClick="displayOnClick('e6','tl230','tp230')">医药物流标准</a>
+              <dl id="e6" style="display: none;">
+                <dt id="s231"> <a class="final-item" onClick="changeStandardList('data/s231.htm')">设施设备</a> </dt>
+                <dt id="s232"> <a class="final-item" onClick="changeStandardList('data/s232.htm')">技术、操作、管理</a> </dt>
+                <dt id="s233"> <a class="final-item" onClick="changeStandardList('data/s233.htm')">信息</a> </dt>
+                <dt id="s234"> <a class="final-item" onClick="changeStandardList('data/s234.htm')">服务质量与评价</a> </dt>
+              </dl>
+            </dt>
+            <dt id="d7">
+              <div id="tl240" class="triangle-left"></div>
+              <div id="tp240" class="triangle-top" style="display: none;"></div>
+              <a class="with-list" onClick="displayOnClick('e7','tl240','tp240')">酒类物流标准</a>
+              <dl id="e7" style="display: none;">
+                <dt id="s241"> <a class="final-item" onClick="changeStandardList('data/s241.htm')">设施设备</a> </dt>
+                <dt id="s242"> <a class="final-item" onClick="changeStandardList('data/s242.htm')">技术、操作、管理</a> </dt>
+                <dt id="s243"> <a class="final-item" onClick="changeStandardList('data/s243.htm')">信息</a> </dt>
+                <dt id="s244"> <a class="final-item" onClick="changeStandardList('data/s244.htm')">服务质量与评价</a> </dt>
+              </dl>
+            </dt>
+            <dt id="d8">
+              <div id="tl250" class="triangle-left"></div>
+              <div id="tp250" class="triangle-top" style="display: none;"></div>
+              <a class="with-list" onClick="displayOnClick('e8','tl250','tp250')">烟草物流标准</a>
+              <dl id="e8" style="display: none;">
+                <dt id="s251"> <a class="final-item" onClick="changeStandardList('data/s251.htm')">设施设备</a> </dt>
+                <dt id="s252"> <a class="final-item" onClick="changeStandardList('data/s252.htm')">技术、操作、管理</a> </dt>
+                <dt id="s253"> <a class="final-item" onClick="changeStandardList('data/s253.htm')">信息</a> </dt>
+                <dt id="s254"> <a class="final-item" onClick="changeStandardList('data/s254.htm')">服务质量与评价</a> </dt>
+              </dl>
+            </dt>
+            <dt id="d9">
+              <div id="tl260" class="triangle-left"></div>
+              <div id="tp260" class="triangle-top" style="display: none;"></div>
+              <a class="with-list" onClick="dispalyLeftList('e9','tl260','tp260')">汽车物流标准</a>
+              <dl id="e9" style="display: none;">
+                <dt id="s261"> <a class="final-item" onClick="changeStandardList('data/s261.htm')">规格与分类</a> </dt>
+                <dt id="s262"> <a class="final-item" onClick="changeStandardList('data/s262.htm')">技术、操作、管理</a> </dt>
+                <dt id="s263"> <a class="final-item" onClick="changeStandardList('data/s263.htm')">信息</a> </dt>
+                <dt id="s264"> <a class="final-item" onClick="changeStandardList('data/s264.htm')">服务质量与评价</a> </dt>
+              </dl>
+            </dt>
+            <dt id="da">
+              <div id="tl270" class="triangle-left"></div>
+              <div id="tp270" class="triangle-top" style="display: none;"></div>
+              <a class="with-list" onClick="displayOnClick('ea','tl270','tp270')">航空物流标准</a>
+              <dl id="ea" style="display: none;">
+                <dt id="s271"> <a class="final-item" onClick="changeStandardList('data/s271.htm')">设施设备</a> </dt>
+                <dt id="s272"> <a class="final-item" onClick="changeStandardList('data/s272.htm')">技术、操作、管理</a> </dt>
+                <dt id="s273"> <a class="final-item" onClick="changeStandardList('data/s273.htm')">信息</a> </dt>
+                <dt id="s274"> <a class="final-item" onClick="changeStandardList('data/s274.htm')">服务质量与评价</a> </dt>
+              </dl>
+            </dt>
+            <dt id="db"> <a class="final-item" onClick="changeStandardList('data/s28.htm')">家电物流标准</a> </dt>
+            <dt id="dc">
+              <div id="tl290" class="triangle-left"></div>
+              <div id="tp290" class="triangle-top" style="display: none;"></div>
+              <a class="with-list" onClick="displayOnClick('ec','tl290','tp290')">煤炭物流标准</a>
+              <dl id="ec" style="display: none;">
+                <dt id="s291"> <a class="final-item" onClick="changeStandardList('data/s291.htm')">规格与分类</a> </dt>
+                <dt id="s292"> <a class="final-item" onClick="changeStandardList('data/s292.htm')">设施设备</a> </dt>
+                <dt id="s293"> <a class="final-item" onClick="changeStandardList('data/s293.htm')">技术、操作、管理</a> </dt>
+              </dl>
+            </dt>
+            <dt id="dd">
+              <div id="tl2a0" class="triangle-left"></div>
+              <div id="tp2a0" class="triangle-top" style="display: none;"></div>
+              <a class="with-list" onClick="displayOnClick('ed','tl2a0','tp2a0')">邮政物流标准</a>
+              <dl id="ed" style="display: none;">
+                <dt id="s2a1"> <a class="final-item" onClick="changeStandardList('data/s2a1.htm')">设施设备</a> </dt>
+                <dt id="s2a2"> <a class="final-item" onClick="changeStandardList('data/s2a2.htm')">技术、操作、管理</a> </dt>
+                <dt id="s2a3"> <a class="final-item" onClick="changeStandardList('data/s2a3.htm')">信息</a> </dt>
+                <dt id="s2a4"> <a class="final-item" onClick="changeStandardList('data/s2a4.htm')">服务质量与评价</a> </dt>
+              </dl>
+            </dt>
+            <dt id="de">
+              <div id="tl2b0" class="triangle-left"></div>
+              <div id="tp2b0" class="triangle-top" style="display: none;"></div>
+              <a class="with-list" onClick="displayOnClick('ee','tl2b0','tp2b0')">出版物物流标准</a>
+              <dl id="ee" style="display: none;">
+                <dt id="s2b1"> <a class="final-item" onClick="changeStandardList('data/s2b1.htm')">技术、操作、管理</a> </dt>
+                <dt id="s2b2"> <a class="final-item" onClick="changeStandardList('data/s2b2.htm')">信息</a> </dt>
+              </dl>
+            </dt>
+            <dt id="df">
+              <div id="tl2c0" class="triangle-left"></div>
+              <div id="tp2c0" class="triangle-top" style="display: none;"></div>
+              <a class="with-list" onClick="displayOnClick('ef','tl2c0','tp2c0')">木材物物流标准</a>
+              <dl id="ef" style="display: none;">
+                <dt id="s2c1"> <a class="final-item" onClick="changeStandardList('data/s2c1.htm')">产品</a> </dt>
+                <dt id="s2c2"> <a class="final-item" onClick="changeStandardList('data/s2c2.htm')">技术、操作、管理</a> </dt>
+                <dt id="s2c3"> <a class="final-item" onClick="changeStandardList('data/s2c3.htm')">信息</a> </dt>
+              </dl>
+            </dt>
+            <dt id="dg">
+              <div id="tl2d0" class="triangle-left"></div>
+              <div id="tp2d0" class="triangle-top" style="display: none;"></div>
+              <a class="with-list" onClick="displayOnClick('eg','tl2d0','tp2d0')">进出口物流标准</a>
+              <dl id="eg" style="display: none;">
+                <dt id="s2d1"> <a class="final-item" onClick="changeStandardList('data/s2d1.htm')">技术、操作、管理</a> </dt>
+                <dt id="s2d2"> <a class="final-item" onClick="changeStandardList('data/s2d2.htm')">信息</a> </dt>
+                <dt id="s2d3"> <a class="final-item" onClick="changeStandardList('data/s2d3.htm')">服务质量与评价</a> </dt>
+              </dl>
+            </dt>
+            <dt id="dh">
+              <div id="tl2e0" class="triangle-left"></div>
+              <div id="tp2e0" class="triangle-top" style="display: none;"></div>
+              <a class="with-list" onClick="displayOnClick('eh','tl2e0','tp2e0')">危险品物物流标准</a>
+              <dl id="eh" style="display: none;">
+                <dt id="s2e1"> <a class="final-item" onClick="changeStandardList('data/s2e1.htm')">规格与分类</a> </dt>
+                <dt id="s2e2"> <a class="final-item" onClick="changeStandardList('data/s2e2.htm')">设施设备</a> </dt>
+                <dt id="s2e3"> <a class="final-item" onClick="changeStandardList('data/s2e3.htm')">技术、操作、管理</a> </dt>
+                <dt id="s2e4"> <a class="final-item" onClick="changeStandardList('data/s2e4.htm')">信息</a> </dt>
+              </dl>
+            </dt>
+            <dt id="di"> <a class="final-item" onClick="changeStandardList('data/s2f.htm')">其他物流标准</a> </dt>
+          </dl>
+        </dt>
+      </dl>
+    </div>
+    <div id="right-list">
+      <div id="table-head" style="visibility:hidden" >
+        <table border="0">
+          <tr height="50">
+            <td width="121">标准编号</td>
+            <td width="151">标准名称</td>
+            <td width="88">发布日期</td>
+            <td width="88">实施日期</td>
+            <td width="273">制定范围</td>
+          </tr>
+        </table>
+      </div>
+      <div id="user-manual">
+      	<p>
+      		查询具体标准请前往<a href="http://bz.xmis.org.cn" target="_blank">厦门市标准信息服务平台。(http://bz.xmis.org.cn)</a> 
+      	</p>
+      	<p>
+      		如有任何疑问，请联系管理员。<br>邮箱：<a href="mailto:yuehust@hotmail.com">yuehust@hotmail.com</a>
+      	</p>
+      	<p>
+      		谢谢您的使用！ 
+      	</p>
+      </div>
+      <iframe id="standard-frame" name="standardhtml" frameborder="0" width="800px" height="600px" scrolling="yes"  ALLOWTRANSPARENCY="true"></iframe>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="container">
+    <div class="column">
+      <h4>相关链接</h4>
+      <p> <a href="http://xmis.org.cn" target="_blank">厦门市标准化研究院</a> <br>
+        <a href="http://bz.xmis.org.cn" target="_blank">厦门市标准信息服务平台</a> </p>
+    </div>
+    <div class="column">
+      <h4>网站说明</h4>
+      <p> 本网站为厦门市物流标准专题数据库，由厦门市标准化研究院开发提供<br>
+        地址：厦门市思明区湖滨南路170号质监局大楼8楼西侧 361004 </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
